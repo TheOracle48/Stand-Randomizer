@@ -1,0 +1,112 @@
+html {
+    background-image: url("../baseImgs/background2.png");
+}
+
+header {
+    background-image: url("../baseImgs/background1.png");
+    text-align: center;
+    width: 900px;
+    margin: auto;
+    border: 5px solid rgb(158, 158, 15);
+}
+
+@keyframes title {
+    0% {color: green;}
+    25% {color: red;}
+    50% {color: purple;}
+    75% {color: blue;}
+    100% {color: green;}
+}
+
+#title {
+    font-size: 60px;
+    animation-name: title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.info {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+#StandInfo {
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#StandDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    margin: auto;
+    background-color: white;
+}
+
+.not-using {
+    height: 1px;
+}
+
+#StandImage {
+    width: 450px;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    body {
+        font-size: auto;
+    }
+
+    header {
+        width: auto;
+        text-align: center;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+    button {
+        width: 350px;
+        height: auto;
+    }
+
+    #arrow {
+        width: 400px;
+        height: auto;
+    }
+
+    #title {
+        font-size: 40px;
+    }
+
+    #info {
+        font-size: 20px;
+    }
+
+    #StandDiv {
+        width: 400px;
+        text-align: center;
+    }
+
+    #StandName {
+        font-size: 25px;
+    }
+
+    #StandInfo {
+        font-size: 18px;
+    }
+
+    #StandImage {
+        width: 400px;
+        height: auto;
+    }
+
+}
